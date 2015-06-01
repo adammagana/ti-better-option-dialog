@@ -50,6 +50,11 @@ var optionDialog = BetterOptionDialog.create({
 optionDialog.show();
 ```
 
+## Credits
+
+* [@smclab](https://github.com/smclab/titaniumifier) for [titaniumifier](https://github.com/smclab/titaniumifier)
+* [@FokkeZB](https://github.com/FokkeZB) for inspiration for this repository's structure ([ti-html2as](https://github.com/FokkeZB/ti-html2as))
+
 ## License
 
 This library, *betteroptiondialog*, is free software ("Licensed Software"); you can
