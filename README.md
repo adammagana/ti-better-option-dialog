@@ -9,7 +9,7 @@
 
 ![Demonstration](demonstration.gif)
 
-## Code
+## Usage
 
 ### Installation
 
