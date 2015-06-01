@@ -1,0 +1,38 @@
+
+{
+  "name": "ti-better-option-dialog",
+  "version": "0.0.1",
+  "description": "The Titanium option dialog but with easier option creation.",
+  "titaniumManifest": {
+    "guid": "fe325f1e-c2a6-72fc-3c66-e1a3f2c4ef35",
+    "moduleid": "com.magana.betteroptiondialog"
+  },
+  "author": {
+    "name": "Adam Magaña",
+    "email": "holla@adammagana.com",
+    "url": "http://adammagana.com/"
+  },
+  "license": "LGPL-2.1",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "titaniumsdk": ">= 3.3.0"
+  },
+  "main": "index.js",
+  "keywords": [
+    "titanium",
+    "option",
+    "dialog",
+    "better"
+  ],
+  "devDependencies": {
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-titanium": "^0.3.1",
+    "grunt-titaniumifier": "^1.0.0-beta",
+    "grunt-zip": "^0.16.0",
+    "grunt": "^0.4.2",
+    "matchdep": "~0.3.0"
+  }
+}
