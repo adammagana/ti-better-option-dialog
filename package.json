@@ -23,6 +23,7 @@
   "main": "index.js",
   "keywords": [
     "titanium",
+    "titaniumifier",
     "option",
     "dialog",
     "better"
