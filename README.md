@@ -1,6 +1,7 @@
 # Better Titanium Option Dialog
 
 [![gitTio](http://gitt.io/badge.svg)](http://gitt.io/component/com.magana.betteroptiondialog)
+[![Dependencies](https://david-dm.org/adammagana/ti-better-option-dialog/status.svg?style=flat-square)](https://david-dm.org/adammagana/ti-better-option-dialog#info=dependencies)
 [![Dev Dependencies](https://david-dm.org/adammagana/ti-better-option-dialog/dev-status.svg?style=flat-square)](https://david-dm.org/adammagana/ti-better-option-dialog#info=devDependencies)
 
 > A wrapper for Titanium's Option Dialog that makes it simpler to add option buttons.
