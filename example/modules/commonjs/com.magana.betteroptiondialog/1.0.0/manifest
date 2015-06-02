@@ -1,0 +1,10 @@
+version: 1.0.0
+description: The Titanium option dialog but with easier option creation.
+author: Adam Magaña <holla@adammagana.com> (http://adammagana.com/)
+license: LGPL-2.1
+copyright: Copyright © 2015 Adam Magaña
+name: ti-better-option-dialog
+moduleid: com.magana.betteroptiondialog
+guid: fe325f1e-c2a6-72fc-3c66-e1a3f2c4ef35
+platform: commonjs
+minsdk: 3.3.0.GA

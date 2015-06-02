@@ -1,4 +1,3 @@
-
 {
   "name": "ti-better-option-dialog",
   "version": "1.0.0",
@@ -20,7 +19,7 @@
   "engines": {
     "titaniumsdk": ">= 3.3.0"
   },
-  "main": "index.js",
+  "main": "com.magana.betteroptiondialog.js",
   "keywords": [
     "titanium",
     "titaniumifier",
@@ -38,5 +37,6 @@
     "grunt-zip": "^0.16.0",
     "grunt": "^0.4.2",
     "matchdep": "~0.3.0"
-  }
+  },
+  "_nativeDependencies": {}
 }
