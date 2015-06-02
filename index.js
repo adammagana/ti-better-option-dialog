@@ -1,8 +1,15 @@
 (function () {
     'use strict';
 
-    var isIos = Ti.Platform.osname === 'iphone'
-        || Ti.Platform.osname === 'ipad';
+    var Merge = require('lodash.merge'),
+
+        defaults = {
+            showCancel: false
+        },
+
+        isIos = Ti.Platform.osname === 'iphone'
+            || Ti.Platform.osname === 'ipad';
+
 
     function getIndexByProperty(array, key, value) {
         for (var i = 0, l = array.length; i < l; i += 1) {
@@ -18,6 +25,15 @@
         var optionData = settings.options,
             optionDialog,
             cancelIndex;
+
+        // If the user passed `showCancel: true` then automatically add a cancel
+        // object to the optionData array
+        if (settings.showCancel === true) {
+            optionData.push({
+                cancel: true,
+                title: 'Cancel'
+            });
+        }
 
         // Override `settings.options` with an array of strings obtained from
         // each object in the `optionData` array.
@@ -79,7 +95,10 @@
         return optionDialog;
     }
 
+
     module.exports = {
-        create: create
+        create: function (options) {
+            return create(Merge({}, defaults, options));
+        }
     };
 }());

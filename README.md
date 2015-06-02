@@ -28,22 +28,19 @@ var optionDialog = BetterOptionDialog.create({
     options: [
         {
             callback: function (optionDialogEventData) {
-                // Code to save something here
-            },
-            title: 'Save'
-        },
-        {
-            callback: function (optionDialogEventData) {
                 // Code to delete something here
             },
             destructive: true,
             title: 'Delete'
         },
         {
-            cancel: true,
-            title: 'Cancel'
+            callback: function (optionDialogEventData) {
+                // Code to save something here
+            },
+            title: 'Save'
         }
     ],
+    showCancel: true, // Will automatically add a cancel button to the option dialog
     title: 'Better Option Dialog!'
 });
 

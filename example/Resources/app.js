@@ -22,6 +22,19 @@
             value: true
         }),
 
+        saveContainer = Ti.UI.createView({
+            height: '50dp'
+        }),
+        showSaveLabel = Ti.UI.createLabel({
+            left: '10dp',
+            text: 'Show Save Option',
+            textAlign: 'left'
+        }),
+        showSaveSwitch = Ti.UI.createSwitch({
+            right: '10dp',
+            value: true
+        }),
+
         cancelContainer = Ti.UI.createView({
             height: '50dp'
         }),
@@ -72,17 +85,23 @@
             });
         }
 
-        if (showCancelSwitch.value === true) {
+        if (showSaveSwitch.value === true) {
             options.push({
-                cancel: true,
-                title: 'Cancel'
+                callback: function () {
+                    Ti.UI.createAlertDialog({
+                            message: 'Saved!'
+                        })
+                        .show();
+                },
+                title: 'Save'
             });
         }
 
         BetterOptionDialog
             .create({
                 options: options,
-                title: 'Better Option Dialog :)'
+                showCancel: showCancelSwitch.value,
+                title: 'Better Option Dialog!'
             })
             .show();
     }
@@ -94,10 +113,15 @@
     deleteContainer.add(showDeleteLabel);
     deleteContainer.add(showDeleteSwitch);
 
+    saveContainer.add(showSaveLabel);
+    saveContainer.add(showSaveSwitch);
+
     cancelContainer.add(showCancelLabel);
     cancelContainer.add(showCancelSwitch);
 
     window.add(deleteContainer);
+    window.add(createBorder());
+    window.add(saveContainer);
     window.add(createBorder());
     window.add(cancelContainer);
     window.add(createBorder());
